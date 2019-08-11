@@ -1,0 +1,14 @@
+$(document).ready(function(){
+    $(".box-1").click(function(){
+        $("#iris-modal").modal();
+    });
+    $(".box-2").click(function(){
+        $("#rfid-modal").modal();
+    });
+    $(".box-3").click(function(){
+        $("#datalog-modal").modal();
+    });
+    $(".box-4").click(function(){
+        $("#homeauto-modal").modal();
+    });
+});
