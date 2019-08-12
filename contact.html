@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
 
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
 </head>
 <body>
     <!-- Navbar Begins -->
@@ -39,11 +41,115 @@
     </nav>
     <!-- Navbar Ends -->
 
+    <div class="container contact-container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>CONTACT US</h1>
+                <form class="form-horizontal" action=" " method="post"  id="contact_form">
+                    <fieldset>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <input  name="first_name" placeholder="Name" class="form-control"  type="text">
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-envelope"></i></i></span>
+                                <input name="email" placeholder="E-Mail" class="form-control"  type="text">
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-globe-americas"></i></i></span>
+                                <input name="website" placeholder="Business URL" class="form-control" type="text">
+                            </div>
+                        </div>
+
+                        <!-- Text area -->
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fas fa-pencil-alt"></i></span>
+                                <textarea class="form-control" name="comment" placeholder="Tell us a bit about your goals so we can get you started!!"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Success message -->
+                        <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+
+                        <!-- Button -->
+                        <div class="form-group">
+                            <!--
+                            <label class="col-md-4 control-label"></label>
+                            <div class="col-md-4">
+                                <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+                            </div>
+                            -->
+                            
+                            <div class="svg-wrapper" style="margin-top: 3rem; text-align: center;">
+                                <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+                                    <rect class="shape" height="60" width="320" />
+                                </svg>
+                                <div class="text">SEND</div>
+                            </div>
+                            
+                        </div>
+
+                    </fieldset>
+                </form>
+
+                <h2>Get started today </h2>
+                    <p>Where does your business need more support? We offer a broad range of services and packages that be customized to your needs. Send us a message today, and we can start you on a path to success.</p>
+                    <!--<h2>G'Xtron Innovations</h2>-->
+                    <p style="padding-top:1rem;"><i class="fas fa-mobile-alt"></i><span>+91 9188332509</span></p>
+                    <p><i class="fa fa-envelope"></i><span>teamgxtron@gmail.com</span></p>
+                    <p style="padding-top: 2rem;">
+                        <a href="https://www.facebook.com/gxtron6/" target="_blank">
+                            <i class="fab fa-facebook-f fa-2x"></i>
+                        </a>
+                        <a href="https://twitter.com/g_xtron" target="_blank">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="https://www.instagram.com/gxtroninnovations/" target="_blank">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="https://www.pinterest.com/gxtrons/" target="_blank">
+                            <i class="fab fa-pinterest fa-2x"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCLx4tlC_x9DH-68TQ-vRxZw?view_as=public" target="_blank">
+                            <i class="fab fa-youtube fa-2x"></i>
+                        </a>
+                    </p>
+            </div> <!-- col-md-6 -->
+            <div class="col-md-6">
+                <div id="map"></div>
+            </div> <!-- col-md-6 -->
+        </div> <!-- row -->
+    </div> <!-- container -->
 
     <!-- JavaScript Files -->
+    <script>
+        function initMap() {
+            var fisat = {lat: 10.232954, lng: 76.408754};
+            var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 16, center: fisat});
+            var marker = new google.maps.Marker({position: fisat, map: map});
+        }
+    </script>
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"></script>
     <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/form.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuuU1CLP8qBFCrkXJU6fNRftZyqs7jeAI&callback=initMap">
+    </script>
 
 </body>
 </html>

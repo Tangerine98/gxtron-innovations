@@ -211,3 +211,126 @@ body {
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
 }
+
+/* Contact Us Page */
+.contact-container {
+    margin-top: 10rem;
+    max-height: 100vh !important;
+    text-align: center !important;
+}
+
+.contact-container h1 {
+    color: #ffffff !important;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 1rem;
+    border-bottom: 4px solid #EE445F;
+    margin-bottom: 4rem;
+}
+
+.contact-container h2 {
+    /* font-size: 1.75rem !important; */
+    color: #ffffff;
+}
+
+.contact-container p {
+    font-size: 1.75rem !important;
+    color: #a3bfc6;
+}
+
+.contact-container p svg {
+    color: #ffffff !important;
+}
+
+.contact-container p a svg {
+    color: #EE445F !important;
+}
+
+form {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+textarea {
+    width: 100%;
+}
+
+.input-group {
+    background-color: #222B31 !important;
+    border: 2px solid #EE445F !important;
+    border-radius: 0;
+}
+
+.input-group-addon {
+    color: #EE445F !important;
+    background-color: #222B31 !important;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-control {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.svg-wrapper {
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 320px;
+}
+
+.shape {
+    fill: transparent;
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    stroke: #EE445F;
+}
+
+.text {
+    color: #ffffff;
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+    letter-spacing: 8px;
+    line-height: 32px;
+    position: relative;
+    top: -48px;
+}
+
+@keyframes draw {
+    0% {
+        stroke-dasharray: 140 540;
+        stroke-dashoffset: -474;
+        stroke-width: 8px;
+    }
+    100% {
+        stroke-dasharray: 760;
+        stroke-dashoffset: 0;
+        stroke-width: 2px;
+    }
+}
+
+.svg-wrapper:hover .shape {
+    -webkit-animation: 0.5s draw linear forwards;
+    animation: 0.5s draw linear forwards;
+}
+
+.svg-inline--fa {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#map {
+    height: 75vh;  /* The height is 400 pixels */
+    margin-right: 15%;
+    margin-left: 15%;
+    border: 4px solid #EE445F !important;
+    /* border-style: solid;
+    border-color: #000000; */
+}
+
+#success_message {
+    display: none;
+}
