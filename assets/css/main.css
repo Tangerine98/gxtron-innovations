@@ -20,14 +20,21 @@ h1 {
     font-family: 'Raleway', sans-serif;
 }
 
+.svg-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    border-bottom: 4px solid #ffde02 !important;
+    z-index: 999;
+}
+
 svg {
     position: absolute;
     top: 50vh;
     left: 50vw;
     transform: translate(-50%, -50%);
     background-color: #ffffff;
-    z-index: 998;
-    border-bottom: 4px solid #ffde02 !important;
+    z-index: 997;
   }
 
 @media screen and (min-width: 768px) {
