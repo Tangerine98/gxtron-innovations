@@ -1,8 +1,15 @@
+.logo {
+    text-align: center;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
 img {
     max-height: 300px;
     max-width: 300px;
-    margin: auto;
-    margin-top: 25rem;
 }
 
 .col-md-6 {
@@ -11,4 +18,95 @@ img {
 
 h1 {
     font-family: 'Raleway', sans-serif;
+}
+
+svg {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    z-index: 998;
+    border-bottom: 4px solid #ffde02 !important;
+  }
+
+@media screen and (min-width: 768px) {
+    svg {
+        width: 100vw !important;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  svg {
+      height: 100vh !important;
+      overflow: hidden;
+  }
+}
+
+/* Circuit-15 */
+/* @-webkit-keyframes draw {
+  0% {
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-opacity: 1;
+  }
+}
+@keyframes draw {
+  0% {
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-opacity: 1;
+  }
+}
+.path {
+  -webkit-animation: draw 30s infinite;
+  animation: draw 30s infinite;
+  animation-timing-function: linear;
+}
+.path-01 {
+  animation-delay: 0s;
+}
+.path-02 {
+  animation-delay: 1s;
+}
+.path-03 {
+  animation-delay: 2s;
+}
+.path-04 {
+  animation-delay: 1s;
+}
+.path-05 {
+  animation-delay: 2s;
+} */
+
+/* Circuit 10 */
+.path {
+  animation: draw 20s infinite;
+  animation-timing-function: linear;
+}
+.path-01 {
+  animation-delay: 0s;
+}
+.path-02 {
+  animation-delay: 1s;
+}
+.path-03 {
+  animation-delay: 2s;
+}
+.path-04 {
+  animation-delay: 3s;
+}
+.path-05 {
+  animation-delay: 4s;
+}
+@keyframes draw {
+  0% {
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-opacity: 1;
+  }
 }
