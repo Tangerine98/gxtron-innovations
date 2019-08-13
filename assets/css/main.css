@@ -24,7 +24,7 @@ h1 {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    border-bottom: 4px solid #ffde02 !important;
+    border-bottom: 4px solid #248bb1 !important;
     z-index: 999;
 }
 
@@ -89,32 +89,3 @@ svg {
 .path-05 {
   animation-delay: 2s;
 }
-
-/* Circuit 10 */
-/* .path {
-  animation: draw 20s infinite;
-  animation-timing-function: linear;
-}
-.path-01 {
-  animation-delay: 0s;
-}
-.path-02 {
-  animation-delay: 1s;
-}
-.path-03 {
-  animation-delay: 2s;
-}
-.path-04 {
-  animation-delay: 3s;
-}
-.path-05 {
-  animation-delay: 4s;
-}
-@keyframes draw {
-  0% {
-  }
-  100% {
-    stroke-dashoffset: 0;
-    stroke-opacity: 1;
-  }
-} */
