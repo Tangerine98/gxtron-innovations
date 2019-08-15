@@ -22,8 +22,8 @@ h1 {
 
 .svg-container {
     width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    height: 100vh !important;
+    overflow-y: hidden;
     border-bottom: 4px solid #248bb1 !important;
     z-index: 999;
 }

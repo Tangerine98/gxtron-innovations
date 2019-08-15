@@ -1,6 +1,8 @@
 body {
     background-color: #ffffff;
     font-family: 'Fira Sans', sans-serif;
+    width: 100vw !important;
+    overflow-x: hidden;
 }
 
 .navbar-inverse {
@@ -9,20 +11,13 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-/* .navbar a span {
-    font-size: 20px;
-    text-transform: uppercase;
-    color: #000000 !important;
-    letter-spacing: 2px;
-    padding: 16px !important;
-} */
-
 .navbar a:hover {
     text-decoration: none !important;
 }
 
 .navbar img {
-    margin-top: -15px;
+    margin-top: -10px;
+    height: 40px !important;
 }
 
 .nav {
@@ -30,7 +25,6 @@ body {
 }
 
 .nav a {
-    /* letter-spacing: 2px; */
     padding: 16px !important;
     color: #242038 !important;
     text-transform: uppercase;
@@ -112,14 +106,12 @@ body {
 /* products.html */
 
 .product-container {
-    height: 100vh !important;
     text-transform: uppercase;
 }
 
-.product-container .row {
+/* .product-container .row {
     margin-bottom: 1rem;
-    margin-top: 1rem;
-}
+} */
 
 .product-container .row-1 {
     margin-top: 10rem;
@@ -134,12 +126,12 @@ body {
 .product-container .col-md-7 .box-1 {
     text-align: center;
     height: 65vh;
-    width: 95%;
+    width: 99%;
     padding-left: 0;
     padding-right: 0;
     margin-left: 0;
-    background-color: #f2f2f2 !important;
-    border: 4px solid #248bb1 !important;
+    background-color: #EEEEEE !important;
+    /* border: 4px solid #248bb1 !important; */
 }
 
 @media screen and (max-width: 1023px) {
@@ -159,7 +151,7 @@ body {
 
 .product-container .col-md-7 .box-1:hover {
     background-color: #248bb1 !important;
-    border: 4px solid #f2f2f2 !important;
+    /* border: 4px solid #EEEEEE !important; */
 }
 
 .product-container .col-md-7 .box-1:hover h1 {
@@ -177,18 +169,18 @@ body {
 
 .product-container .col-md-5 .row .box-2 {
     text-align: center;
-    height: 30vh;
-    width: 95%;
-    margin-left: 5%;
+    height: 31.5vh;
+    width: 99%;
+    margin-left: 1%;
     margin-right: 0;
     margin-top: 0;
-    background-color: #f2f2f2 !important;
-    border: 4px solid #248bb1 !important;
+    background-color: #EEEEEE !important;
+    /* border: 4px solid #248bb1 !important; */
 }
 
 .product-container .col-md-5 .row .box-2:hover {
     background-color: #248bb1 !important;
-    border: 4px solid #f2f2f2 !important;
+    border: 4px solid #EEEEEE !important;
 }
 
 .product-container .col-md-5 .row .box-2:hover h1 {
@@ -197,27 +189,32 @@ body {
 
 .product-container .col-md-5 .row .box-3 {
     text-align: center;
-    height: 30vh;
-    width: 95%;
-    margin-left: 5%;
+    height: 31vh;
+    width: 99%;
+    margin-left: 1%;
     margin-right: 0;
-    margin-top: 5vh;
-    background-color: #f2f2f2 !important;
-    border: 4px solid #248bb1 !important;
+    margin-top: 0.5vh;
+    background-color: #EEEEEE !important;
+    /* border: 4px solid #248bb1 !important; */
 }
 
 .product-container .col-md-5 .row .box-3:hover {
     background-color: #248bb1 !important;
-    border: 4px solid #f2f2f2 !important;
+    border: 4px solid #EEEEEE !important;
 }
 
 .product-container .col-md-5 .row .box-3:hover h1 {
     color: #ffffff !important;
 }
 
+.product-container .col-md-12 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
 .product-container .row-2 {
     height: 30vh;
-    margin-top: 5vh;
+    margin-top: 0;
     margin-bottom: 10rem;
 }
 
@@ -232,13 +229,13 @@ body {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
-    background-color: #f2f2f2 !important;
-    border: 4px solid #248bb1 !important;
+    background-color: #EEEEEE !important;
+    /* border: 4px solid #248bb1 !important; */
 }
 
 .product-container .row-2 .box-4:hover {
     background-color: #248bb1 !important;
-    border: 4px solid #f2f2f2 !important;
+    border: 4px solid #EEEEEE !important;
 }
 
 .product-container .row-2 .box-4:hover h1 {
@@ -254,7 +251,7 @@ body {
     width: 100%;
     border-radius: 0;
     border: 4px solid #248bb1 !important;
-    outline: 10px solid #f2f2f2 !important;
+    outline: 10px solid #EEEEEE !important;
 }
 
 .modal-title {
@@ -305,7 +302,7 @@ textarea {
 }
 
 .input-group {
-    background-color: #f2f2f2 !important;
+    background-color: #EEEEEE !important;
     border: 2px solid #248bb1 !important;
     border-radius: 0;
 }
