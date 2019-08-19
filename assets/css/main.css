@@ -20,35 +20,40 @@ h1 {
     font-family: 'Raleway', sans-serif;
 }
 
+/* .test {
+    height: 100vh !important;
+    overflow-y: hidden !important;
+    border-bottom: 4px solid #248bb1 !important;
+    z-index: 999;
+} */
+
 .svg-container {
     width: 100vw;
     height: 100vh !important;
-    overflow-y: hidden;
+    overflow: hidden !important;
     border-bottom: 4px solid #248bb1 !important;
-    z-index: 999;
+    z-index: 999 !important;
 }
 
 svg {
-    position: absolute;
+    /* position: absolute; */
     top: 50vh;
     left: 50vw;
     transform: translate(-50%, -50%);
     background-color: #ffffff;
-    z-index: 997;
+    z-index: 997 !important;
   }
 
 @media screen and (min-width: 768px) {
     svg {
         min-width: 100vw !important;
         /* max-height: 100vh !important; */
-        overflow: hidden;
     }
 }
 
 @media screen and (max-width: 768px) {
   svg {
       height: 100vh !important;
-      overflow: hidden;
   }
 }
 
