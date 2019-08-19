@@ -261,7 +261,7 @@ body {
     margin-bottom: 4rem;
 }
 
-.modal-body p {
+.modal-body p, .modal-body ul li {
     font-size: 2rem;
 }
 
