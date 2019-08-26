@@ -8,8 +8,8 @@
 }
 
 img {
-    max-height: 300px;
-    max-width: 300px;
+    max-height: 750px;
+    max-width: 750px;
 }
 
 .col-md-6 {
@@ -18,20 +18,34 @@ img {
 
 h1 {
     font-family: 'Raleway', sans-serif;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    border-bottom: 4px solid #248bb1;
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
-/* .test {
-    height: 100vh !important;
-    overflow-y: hidden !important;
-    border-bottom: 4px solid #248bb1 !important;
-    z-index: 999;
-} */
+p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.row {
+  margin-top: 6rem;
+}
+
+.mission-row img {
+    padding-top: 4rem;
+}
+
 
 .svg-container {
     width: 100vw;
     height: 100vh !important;
     overflow: hidden !important;
     border-bottom: 4px solid #248bb1 !important;
+    margin-bottom: 4rem;
     z-index: 999 !important;
 }
 
